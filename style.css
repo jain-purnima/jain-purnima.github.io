@@ -203,7 +203,7 @@ section h2 {
 /* --------------------
 Favicon
 -------------------- */
-img.favicon {
+.favicon {
   width: 32px;
   height: 32px;
   border-radius: 50%; /* makes it circular */
@@ -708,6 +708,7 @@ footer p {
     width: 100%;
   } 
 }
+
 
 
 
