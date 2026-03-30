@@ -684,12 +684,6 @@ Testimonials
   font-weight: bold;
 }
 
-.swiper-horizontal {
-    &.swiper-rtl .swiper-button-next, &.swiper-rtl ~ .swiper-button-next, & ~ .swiper-button-prev, & .swiper-button-prev {
-        color: #f699c6 !important;
-    }
-}
-
 /* --------------------
 Footer
 -------------------- */
