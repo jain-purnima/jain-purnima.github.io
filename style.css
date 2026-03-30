@@ -669,11 +669,15 @@ Portfolio Section
 Testimonials
 -------------------- */
 #testimonials blockquote {
-  font-size: 1rem;
-  background: var(--light-pink);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    font-size: 1rem;
+    background: var(--light-pink);
+    padding: 30px;
+    min-height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(1,1,10,12%);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 #testimonials p {
   margin-top: 10px;
