@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -1057,40 +1058,40 @@
 </section>
 
   <!-- Testimonials -->
-  <section id="testimonials" class="py-5">
-    <div class="container text-center">
+  <section id="testimonials" class="py-5 swiper">
+    <div class="container text-center swiper">
       <h2 class="mb-5">What Clients Say</h2>
 
- <div class="row">
-        <div class="col-md-4" data-aos="fade-right">
+ <div class="row swiper-wrapper">
+        <div class="col-md-4 swiper-slide" data-aos="fade-right">
             <blockquote>"Your design work exceeded our expectations—truly impressive and thoughtfully done. Stay in touch, we will collaborate again for more Work in future.
 "</blockquote>
             <p>Teacher Annabella | Charter School, Abu Dhabi</p>
         </div>
         
-        <div class="col-md-4" data-aos="fade-left">
+        <div class="col-md-4 swiper-slide" data-aos="fade-left">
             <blockquote>"Thankyou Sister. You really helped us grow Fanan more big."</blockquote>
             <p>Mohamed and Ahmed | Fanan Flowers and Gardens, Abu Dhabi</p>
         </div>
 
-        <div class="col-md-4" data-aos="fade-up">
+        <div class="col-md-4 swiper-slide" data-aos="fade-up">
             <blockquote>"Very nice, Good job. I loved the design of my visiting card."</blockquote>
             <p>Ms. Suzan | Wish Events, Abu Dabi</p>
         </div>
       </div>
       
-      <div class="row">
-        <div class="col-md-4" data-aos="fade-right">
+      <div class="row swiper-pagination">
+        <div class="col-md-4 swiper-slide" data-aos="fade-right">
             <blockquote>"Purnima exceeded our expectations with her creativity and professionalism!"</blockquote>
             <p>Amira | Golden Kids School, Abu Dhabi</p>
         </div>
         
-        <div class="col-md-4" data-aos="fade-left">
+        <div class="col-md-4 swiper-slide" data-aos="fade-left">
             <blockquote>"Her attention to detail is unmatched. Highly recommended!"</blockquote>
             <p>Nisha | Playhouse Daycare, Abu Dhabi</p>
         </div>
 
-        <div class="col-md-4" data-aos="fade-up">
+        <div class="col-md-4 swiper-slide" data-aos="fade-up">
             <blockquote>"Purnima is a talented designer who delivers high-quality work on time."</blockquote>
             <p>Hammad Sayad | Galaxy Computer Education, Abu Dhabi</p>
         </div>
@@ -1112,6 +1113,27 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+new Swiper('.swiper', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }
+});
+</script>
 
 <!-- GLightbox JS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
