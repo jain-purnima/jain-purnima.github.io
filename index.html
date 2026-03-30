@@ -1069,7 +1069,7 @@
         <div class="swiper-slide">
           <div class="testimonial-card">
             <blockquote>
-              "Your design work exceeded our expectations—truly impressive and thoughtfully executed."
+              "Your worked so thoughtfully. Stay in touch, will collaborate again for more Work in future."
             </blockquote>
             <p>Teacher Annabella <br><span>Charter School, Abu Dhabi</span></p>
           </div>
@@ -1079,7 +1079,7 @@
         <div class="swiper-slide">
           <div class="testimonial-card">
             <blockquote>
-              "You really helped us grow Fanan Flowers. Thank you for your support!"
+              "Thankyou Sister. You really helped us grow Fanan more big."
             </blockquote>
             <p>Mohamed & Ahmed <br><span>Fanan Flowers, Abu Dhabi</span></p>
           </div>
@@ -1099,7 +1099,7 @@
         <div class="swiper-slide">
           <div class="testimonial-card">
             <blockquote>
-              "Purnima exceeded our expectations with her creativity and professionalism."
+              "Insha Allah, you always have a very great ideas. I will put this for printing. Thankyou"
             </blockquote>
             <p>Amira <br><span>Golden Kids School</span></p>
           </div>
@@ -1109,7 +1109,7 @@
         <div class="swiper-slide">
           <div class="testimonial-card">
             <blockquote>
-              "Her attention to detail is outstanding. Highly recommended!"
+              "Your attention to detail is outstanding. Highly recommended!"
             </blockquote>
             <p>Nisha <br><span>Playhouse Daycare</span></p>
           </div>
@@ -1125,10 +1125,20 @@
           </div>
         </div>
 
+         <!-- Slide 7 -->
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <blockquote>
+              "You give fast work delivery, unique, well tested designs(QRs/links)"
+            </blockquote>
+            <p>Al Zubaien <br><span>Stationary Shop</span></p>
+          </div>
+        </div>
+
       </div>
 
       <!-- Pagination -->
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination my-5"></div>
 
       <!-- Arrows (optional) -->
       <div class="swiper-button-next"></div>
@@ -1154,25 +1164,42 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<script>
-new Swiper('.swiper', {
+  <script>
+var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
+  slidesPerGroup: 3,   // 🔥 KEY LINE (group sliding)
   spaceBetween: 20,
-  loop: true,
+  loop: false,         // ⚠️ better OFF for clean grouping
   autoplay: {
     delay: 4000,
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
   breakpoints: {
-    0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 }
+    0: {
+      slidesPerView: 1,
+      slidesPerGroup: 1
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    },
+    1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 3   // 👈 Desktop: 3 at once, 3 slide
+    }
   }
 });
 </script>
+
+
 
 <!-- GLightbox JS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
