@@ -200,6 +200,10 @@ section h2 {
   font-size: clamp(2.6rem, 6vw, 3rem);
   margin-bottom: 40px;
 }
+footer h2 {
+  font-size: clamp(2.6rem, 6vw, 3rem);
+  margin-bottom: 40px;
+}
 /* --------------------
 Favicon
 -------------------- */
